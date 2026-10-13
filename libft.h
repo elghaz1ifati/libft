@@ -6,7 +6,9 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:19:18 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/13 12:19:29 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/13 12:24:08 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);

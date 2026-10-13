@@ -6,11 +6,11 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:37:31 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/13 12:38:45 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/13 12:49:14 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_is_ascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:37:31 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/13 12:49:14 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/15 13:39:30 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,11 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	printf("%d\n", ft_isascii('a'));
+// 	printf("%d\n", ft_isascii('1'));
+// 	printf("%d\n", ft_isascii(128));
+// }

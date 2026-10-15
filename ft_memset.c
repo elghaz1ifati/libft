@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:21:34 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/15 14:50:28 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/15 16:38:31 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *ptr, int value, size_t byte)
 {
 	unsigned char	*b;
-	
+
 	b = (unsigned char *)ptr;
 	while (byte > 0)
 	{
@@ -25,7 +25,6 @@ void	*ft_memset(void *ptr, int value, size_t byte)
 	}
 	return (ptr);
 }
-
 // #include <stdio.h>
 // int	main()
 // {

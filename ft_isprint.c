@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:40:39 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/13 12:43:32 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/15 13:52:37 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	printf("%d\n", ft_isprint(127));
+// 	printf("%d\n", ft_isprint('\t'));
+// }

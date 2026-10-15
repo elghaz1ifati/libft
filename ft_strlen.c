@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:52:43 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/13 13:43:47 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/15 14:02:27 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ size_t	ft_strlen(char *str)
 		index++;
 	return (index);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	printf("%zu\n", ft_strlen("fez elghazouani"));
+// 	printf("%zu\n", ft_strlen(""));
+// }

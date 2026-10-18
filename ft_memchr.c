@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 15:50:39 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 16:01:18 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:02:50 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 void	*ft_memchr(const void *str, int c, size_t byte)
 {
 	const unsigned char	*s;
-	
+
 	s = (const unsigned char *)str;
-	while(byte > 0)
+	while (byte > 0)
 	{
 		if (*s == (unsigned char)c)
-			return (void *)s;
+			return ((void *)s);
 		byte--;
 		s++;
 	}

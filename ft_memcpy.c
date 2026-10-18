@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 10:11:46 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 12:19:53 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/18 15:11:39 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t byte)
 {
 	unsigned char		*d;
 	unsigned const char	*s;
-	size_t				*count;
+	size_t				count;
 
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 10:45:33 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/19 13:02:43 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/19 13:08:31 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,20 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)str);
 		str++;
 	}
-	if (*str == (char)c)
+	if (*str == (unsigned char)c)
 		return ((char *)str);
 	return (NULL);
 }
 
 // #include <stdio.h>
-// #include <string.h>
-// int main()
+// int	main(void)
 // {
-// 	char s[10] = "azbc";
-// 	// printf("%s\n", ft_strchr(s, 'u'));
-// 	printf("%s", strchr(s, 'i'));
+// 	char	s[] = "azbc";
+// 	printf("1: %s\n", ft_strchr(s, 'a'));  // azbc
+// 	printf("2: %s\n", ft_strchr(s, 'b'));  // bc
+// 	printf("3: %s\n", ft_strchr(s, 'c'));  // c
+// 	printf("4: %p\n", (void *)ft_strchr(s, 'x')); // NULL
+// 	printf("5: %s\n", ft_strchr(s, '\0')); // empty string
+// 	printf("6: %p\n", (void *)ft_strchr(s, 'z')); // address
+// 	return (0);
 // }

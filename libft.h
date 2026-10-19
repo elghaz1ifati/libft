@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:19:18 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 16:20:30 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/19 12:57:41 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,4 @@ void	*ft_memcpy(void *dest, const void *src, size_t byte);
 void	*ft_memmove(void *dest, const void *src, size_t byte);
 void	*ft_memchr(const void *str, int c, size_t byte);
 int		ft_memcmp(const void *str1, const void *str2, size_t byte);
+char	*ft_strchr(const char *str, int c);

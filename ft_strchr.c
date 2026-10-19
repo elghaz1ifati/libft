@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 10:45:33 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/19 12:55:06 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/19 13:02:43 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *str, int c)
 {
 	while (*str != '\0')
 	{
-		if (*str == (char)c)
+		if (*str == (unsigned char)c)
 			return ((char *)str);
 		str++;
 	}

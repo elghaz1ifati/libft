@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:24:40 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/19 15:47:48 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/19 15:57:32 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			&& big[i + j] == little [j])
 			j++;
 		if (little [j] == '\0')
-			return ((char*)&big[i]);
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:25:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 16:09:14 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/20 16:12:21 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 void	*ft_calloc(size_t num, size_t size)
 {
 	void	*ptr;
+
 	if (size != 0 && num > ((size_t)-1 / size))
 		return (NULL);
 	ptr = malloc(num * size);

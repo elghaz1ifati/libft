@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:19:18 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 16:11:32 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/20 16:41:29 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,4 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t num, size_t size);
+char	*ft_strdup(const char *str);

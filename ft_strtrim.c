@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 19:05:55 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 19:26:55 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/20 19:32:03 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	i;
 	char	*trimmed;
 
 	if (!s1 || !set)
@@ -44,10 +43,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trimmed = malloc((end - start) + 1);
 	if (!trimmed)
 		return (NULL);
-	i = 0;
-	while (start < end)
-		trimmed[i++] = s1[start++];
-	trimmed[i] = '\0';
+	ft_memcpy(trimmed, s1 + start, end - start);
+	trimmed[end - start] = '\0';
 	return (trimmed);
 }
 

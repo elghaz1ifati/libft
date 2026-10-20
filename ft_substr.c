@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:45:14 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 18:19:30 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/20 18:46:36 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	size_t	i;
 
 	if (!s)
 		return (NULL);
@@ -26,37 +25,33 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	sub = malloc (len + 1);
 	if (!sub)
 		return (NULL);
-	i = 0;
-	while (i < len && s[start + i])
-	{
-		sub[i] = s[start + i];
-		i++;
-	}
-	sub[i] = '\0';
+	
+	ft_memcpy(sub, s + start, len);
+	sub[len] = '\0';
 	return (sub);
 }
 
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*str = "hello fati";
-// 	int	i;
-// 	i = 0;
-// 	printf("str = ");
-// 	while (i < 10)
-// 	{
-// 		printf("[%d]%c ",i, str[i]);
-// 		i++;
-// 	}
-// 	printf("\nsub = ");
-// 	char	*sub = ft_substr(str, 11, 2);
-// 	i = 0;
-	// while (i < 4)
-	// {
-	// 	printf("[%d]%c ",i, sub[i]);
-	// 	i++;
-	// }
+#include <stdio.h>
+int	main()
+{
+	char	*str = "hello fati";
+	int	i;
+	i = 0;
+	printf("str = ");
+	while (i < 10)
+	{
+		printf("[%d]%c ",i, str[i]);
+		i++;
+	}
+	printf("\nsub = ");
+	char	*sub = ft_substr(str, 2, 5);
+	i = 0;
+	while (i < 5)
+	{
+		printf("[%d]%c ",i, sub[i]);
+		i++;
+	}
 // 	printf("[%d]%c ",i, sub[i]);
-// 	printf ("\n");
-// 	free(sub);
-// }
+	printf ("\n");
+	free(sub);
+}

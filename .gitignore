@@ -1,0 +1,6 @@
+libft-token
+libftTester
+*.o
+*.a
+*.out
+*.exe

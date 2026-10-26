@@ -6,7 +6,7 @@
 #    By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 21:33:13 by fatel-gh          #+#    #+#              #
-#    Updated: 2026/10/24 00:34:05 by fatel-gh         ###   ########.fr        #
+#    Updated: 2026/10/26 11:44:53 by fatel-gh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(ARCHIVE) rcs $(NAME) $(OBJECTS)
 
-%.o: %.c libft.h
+%.o: %.c
 	$(COMPILER) $(CFLAGS) -c $< -o $@
 
 clean:

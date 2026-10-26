@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 10:11:46 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 15:11:39 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/26 16:22:40 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,24 +19,22 @@ void	*ft_memcpy(void *dest, const void *src, size_t byte)
 	size_t				count;
 
 	d = (unsigned char *)dest;
-	s = (unsigned const char *)src;
+	s = (const unsigned char *)src;
 	count = 0;
 	while (count < byte)
 	{
 		d[count] = s[count];
-		count ++;
+		count++;
 	}
 	return (dest);
 }
 
 // #include <stdio.h>
-
 // int	main()
 // {
 // 	const char	*s = "a\0cde";
-// 	char	d[6] = "ABCDE";
+// 	char	d[6] = "ABC\0E";
 // 	int	i;
-
 // 	i = 0;
 // 	while(i < 5)
 // 	{

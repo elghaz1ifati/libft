@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:21:34 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/15 16:38:31 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/26 14:51:04 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,43 @@
 void	*ft_memset(void *ptr, int value, size_t byte)
 {
 	unsigned char	*b;
+	size_t			index;
 
 	b = (unsigned char *)ptr;
-	while (byte > 0)
+	index = 0;
+	while (index < byte)
 	{
-		*b = (unsigned char)value;
-		b++;
-		byte--;
+		b[index] = (unsigned char)value;
+		index++;
 	}
 	return (ptr);
 }
+
 // #include <stdio.h>
 // int	main()
 // {
-// 	int	b = 0;
-// 	char	str[20] = "hello";
+// 	int b;
+// 	int i;
+// 	char	str[6] = "hello";
 // 	ft_memset(str, 'F', 3);
-// 	printf("%s\n",str);
-// 	ft_memset(&b, 0x1, 3);
-// 	ft_memset(&b, 0x5B, 2);
-// 	ft_memset(&b, 0x07, 1);
-// 	printf("%d\n", b);
+// 	i = 0;
+// 	while (str[i])
+// 	{
+// 		printf("[%c]",str[i]);
+// 		i++;
+// 	}
+// 	printf("[%c]\n", str[i]);
+// 	b = 0;
+// 	//1337
+// 	ft_memset(&b, 0x5, 2);
+// 	ft_memset(&b, 0x39, 1);
+// 	printf("[%d]\n", b);
+// 	b = 0;
+// 	//-1337
+// 	ft_memset(&b, 0xFF, 4);
+// 	ft_memset(&b, 0xFA, 1);
+// 	ft_memset((unsigned char *)&b + 1, 0xFA, 1);
+// 	ft_memset((unsigned char *)&b + 2, 0xFF, 2);
+// 	ft_memset(&b, 0xC7, 1);
+// 	printf("[%d]\n", b);
 // }

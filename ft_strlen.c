@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:52:43 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/19 13:35:45 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/26 11:57:15 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@ size_t	ft_strlen(const char *str)
 // #include <stdio.h>
 // int	main()
 // {
-// 	printf("%zu\n", ft_strlen("fez elghazouani"));
-// 	printf("%zu\n", ft_strlen(""));
+// 	printf("\n===== ft_strlen =====\n");
+// 	printf("test [hello]: expected [5] got [%zu]\n", ft_strlen("hello"));
+// 	printf("test [empty]: expected [0] got [%zu]\n", ft_strlen(""));
+// 	printf("test [42]: expected [2] got [%zu]\n", ft_strlen("42"));
+// 	printf("test [spaces]: expected [3] got [%zu]\n", ft_strlen("   "));
+// 	return (0);
 // }

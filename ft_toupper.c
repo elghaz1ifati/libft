@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:04:49 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/15 14:31:21 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/26 12:03:46 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@ int	ft_toupper(int c)
 }
 
 // #include <stdio.h>
-// #include <ctype.h>
 // int	main()
 // {
-// 	printf("%c\n", ft_toupper('a'));
-// 	printf("%c\n", ft_toupper('-'));
-// 	printf("%c\n", toupper('a'));
-// 	printf("%d\n", toupper('\0'));
+// 	printf("\n===== ft_tolower =====\n");
+// 	printf("test ['A']: expected ['a'] got ['%c']\n", ft_tolower('A'));
+// 	printf("test ['Z']: expected ['z'] got ['%c']\n", ft_tolower('Z'));
+// 	printf("test ['m']: expected ['m'] got ['%c']\n", ft_tolower('m'));
+// 	printf("test ['5']: expected ['5'] got ['%c']\n", ft_tolower('5'));
+// 	printf("test [' ']: expected [' '] got ['%c']\n", ft_tolower(' '));
+// 	return (0);
 // }

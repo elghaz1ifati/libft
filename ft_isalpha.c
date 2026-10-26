@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:43:20 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/15 13:31:17 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/26 11:06:23 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ int	ft_isalpha(int c)
 // #include <stdio.h>
 // int	main()
 // {
-// 	printf("%d\n", ft_isalpha('a'));
-// 	printf("%d\n", ft_isalpha('1'));
+// 	printf("===== ft_isalpha =====\n");
+// 	printf("test ['A']: expected [1] got [%d]\n", ft_isalpha('A'));
+// 	printf("test ['z']: expected [1] got [%d]\n", ft_isalpha('z'));
+// 	printf("test ['5']: expected [0] got [%d]\n", ft_isalpha('5'));
+// 	printf("test [' ']: expected [0] got [%d]\n", ft_isalpha(' '));
+// 	printf("test [0]: expected [0] got [%d]\n", ft_isalpha(0));
+// 	return(0);
 // }

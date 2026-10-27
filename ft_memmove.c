@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 12:51:53 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 15:19:12 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/27 17:17:58 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memmove(void *dest, const void *src, size_t byte)
 
 	if (byte == 0 || dest == src)
 		return (dest);
+	if (!dest || !src)
+		return (NULL);
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
 	if (d < s)
@@ -37,11 +39,18 @@ void	*ft_memmove(void *dest, const void *src, size_t byte)
 }
 
 // #include <stdio.h>
-// #include <string.h>
-// int	main(void)
+// int	main ()
 // {
-// 	char	str[20] = "ABCDE";
-// 	ft_memmove(str+2, "XYZ", 2);
-// 	printf("1: %s\n", str);
+// 	char	str[] = "ABCDE";
+// 	int 	i = 0;
+// 	printf("===== ft_memmove =====\n");
+// 	ft_memmove(str + 2, str, 3);
+// 	while(i < 5)
+// 	{
+// 		printf("[%c]", str[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+// 	printf("%p\n", ft_memmove(NULL, NULL, 0));
 // 	return (0);
 // }

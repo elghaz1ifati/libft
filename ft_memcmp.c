@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 16:07:13 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/18 16:19:48 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/27 20:33:04 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ int	ft_memcmp(const void *str1, const void *str2, size_t byte)
 }
 
 // #include <stdio.h>
-// int	main(void)
+// int main()
 // {
-// 	char	str1[] = "abcdeg";
-// 	char	str2[] = "abcdef";
-// 	printf("%d\n", ft_memcmp(str1, str2, 6));
-// 	return (0);
+// 	char	*s1 = "HELLO\0 WORLD";
+// 	char	*s2 = "HELLO \0WORLD";
+// 	int	memcmp = ft_memcmp(s1, s2, 12);
+// 	printf("%d\n", memcmp);
 // }

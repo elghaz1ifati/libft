@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:49:39 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/19 15:58:04 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/27 21:22:05 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,10 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	printf("%d\n", atoi("214748365099"));
+// 	printf("%d\n", ft_atoi("214748365099"));
+// }

@@ -6,12 +6,9 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:25:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 16:12:21 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/27 21:31:35 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//calloc is a function allocate space in memory and initialised it by 0
-//returns null if space is not enough to allocate
 
 #include "libft.h"
 
@@ -31,13 +28,13 @@ void	*ft_calloc(size_t num, size_t size)
 // int main()
 // {
 // 	int	i = 0;
-// 	int	*ptr = ft_calloc((size_t)-1, sizeof(int));
+// 	int	*ptr = ft_calloc(5, sizeof(int));
 // 	if (!ptr)
 // 	{
 // 		printf("Allocation failed\n");
 // 		return (0);
 // 	}
-// 	while (i < 3)
+// 	while (i < 5)
 // 	{
 // 		printf ("index [%d] Address [%p] Value [%d]\n", i, &ptr[i], ptr[i]);
 // 		i++;

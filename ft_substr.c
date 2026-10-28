@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:45:14 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 19:01:28 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/28 12:00:16 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,15 @@
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
+	size_t	slen;
 
 	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	slen = ft_strlen(s);
+	if (start >= slen)
 		return (ft_strdup(""));
-	if (len > ft_strlen(s) - start)
-		len = ft_strlen(s) - start;
+	if (len > slen - start)
+		len = slen - start;
 	sub = malloc (len + 1);
 	if (!sub)
 		return (NULL);
@@ -31,26 +33,24 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 }
 
 // #include <stdio.h>
-// int	main()
+// int main()
 // {
-// 	char	*str = "hello fati";
-// 	int	i;
-// 	i = 0;
-// 	printf("str = ");
-// 	while (i < 10)
+// 	const char *s = "";
+// 	unsigned int start = 3;
+// 	size_t len = 5;
+// 	char *sub = ft_substr(s, start, len);
+// 	size_t i = 0;
+// 	if (!s)
+// 		printf("NULL AKHTI");
+// 	else 
 // 	{
-// 		printf("[%d]%c ",i, str[i]);
-// 		i++;
+// 		while (ft_strlen(sub) > i)
+// 		{
+// 			printf("[%c]", sub[i]);
+// 			i++;
+// 		}
+// 		printf("[\\%d]",sub[i]);
 // 	}
-// 	printf("\nsub = ");
-// 	char	*sub = ft_substr(str, 2, 5);
-// 	i = 0;
-// 	while (i < 5)
-// 	{
-// 		printf("[%d]%c ",i, sub[i]);
-// 		i++;
-// 	}
-// // 	printf("[%d]%c ",i, sub[i]);
-// 	printf ("\n");
-// 	free(sub);
+// 	printf("\n");
+// 	free (sub);
 // }

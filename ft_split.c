@@ -6,90 +6,99 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 15:48:37 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/21 16:28:09 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/28 17:18:42 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(const char *s, int c)
+static int	count_words(const char *str, char sep)
 {
 	int	count;
 	int	i;
 
 	count = 0;
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
-		while (s[i] && s[i] == c)
+		while (str[i] && str[i] == sep)
 			i++;
-		if (s[i])
+		if (str[i] && str[i] != sep)
 			count++;
-		while (s[i] && s[i] != c)
+		while (str[i] && str[i] != sep)
 			i++;
 	}
 	return (count);
 }
 
-static void	*free_all(char **result, int j)
+static void	*free_on_error(char **arr, int a)
 {
-	while (j > 0)
-		free(result[--j]);
-	free (result);
+	while (a > 0)
+		free(arr[--a]);
+	free (arr);
 	return (NULL);
 }
 
-static char	**fill_word(const char *s, int c, char **result, int words_count)
+static char	**fill_word(const char *str, int sep, char **arr, int count)
 {
-	int	i;
-	int	j;
+	int	s;
+	int	a;
 	int	start;
 
-	i = 0;
-	j = 0;
-	while (j < words_count)
+	s = 0;
+	a = 0;
+	while (a < count)
 	{
-		while (s[i] && s[i] == c)
-			i++;
-		start = i;
-		while (s[i] && s[i] != c)
-			i++;
-		result[j] = ft_substr(s, start, i - start);
-		if (!result[j])
-			return (free_all(result, j));
-		j++;
+		while (str[s] && str[s] == sep)
+			s++;
+		start = s;
+		while (str[s] && str[s] != sep)
+			s++;
+		arr[a] = ft_substr(str, start, s - start);
+		if (!arr[a])
+			return (free_on_error(arr, a));
+		a++;
 	}
-	result[j] = NULL;
-	return (result);
+	arr[a] = NULL;
+	return (arr);
 }
 
-char	**ft_split(const char *s, char c)
+char	**ft_split(const char *str, char sep)
 {
-	char	**result;
-	int		words_count;
+	char	**arr;
+	int		count;
 
-	if (!s)
+	if (!str)
 		return (NULL);
-	words_count = count_words(s, c);
-	result = malloc(sizeof (char *) * (words_count + 1));
-	if (!result)
+	count = count_words(str, sep);
+	arr = malloc(sizeof (char *) * (count + 1));
+	if (!arr)
 		return (NULL);
-	return (fill_word(s, c, result, words_count));
+	return (fill_word(str, sep, arr, count));
 }
 
 // #include <stdio.h>
-// int	main(void)
+// int	main()
 // {
-// 	char	**result;
-// 	int		i;
-// 	result = ft_split("   hello world cv bien   ", ' ');
-// 	i = 0;
-// 	while (result && result[i])
+// 	char	**arr;
+// 	int	a;
+// 	int	i;
+// 	arr = ft_split("   hello world cv bien   ", ' ');
+// 	a = 0;
+// 	while (arr && arr[a])
 // 	{
-// 		printf("%s\n", result[i]);
-// 		free(result[i]);
-// 		i++;
+// 		printf("[%d]->",a);
+// 		i = 0;
+// 		while (arr[a][i])
+// 		{
+// 			printf("[%c]", arr[a][i]);
+// 			i++;
+// 		}
+// 		printf("[\\%d]",arr[a][i]);
+// 		printf("\n");
+// 		free(arr[a]);
+// 		a++;
 // 	}
-// 	free(result);
+// 	free(arr);
 // 	return (0);
 // }

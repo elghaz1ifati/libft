@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 18:38:06 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/20 19:01:40 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/28 12:31:40 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,19 +33,20 @@ char	*ft_strjoin(const char *s1, const char *s2)
 // #include <stdio.h>
 // int	main(void)
 // {
-// 	char	*str[3] = {"hello", "fati"};
+// 	char	*str[3] = {"hello ", "fati"};
 // 	char	*join;
-// 	int		i;
+// 	int	i;
 // 	i = 0;
-// 	while (i < 2)
+// 	while (i < 3)
 // 	{
 // 		printf("[%d] %s\n", i, str[i]);
 // 		i++;
 // 	}
 // 	join = ft_strjoin(str[0], str[1]);
 // 	if (!join)
-// 		return (1);
-// 	printf("joined: %s \n", join);
+// 		printf("NULL A BENTY");
+// 	else
+// 		printf("joined: %s\\%d\n", join, join[11]);
 // 	free(join);
 // 	return (0);
 // }

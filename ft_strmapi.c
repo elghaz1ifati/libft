@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 09:08:06 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 09:38:16 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/29 18:18:33 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,25 +34,20 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 }
 
 // #include <stdio.h>
-// char	test(unsigned int i, char c)
+// char	uppcaseifeven(unsigned int i, char c)
 // {
-// 	(void)i;
-// 	if (c >= 'a' && c <= 'z')
-// 		return (c - 32);
+// 	if(i % 2 == 0 && c >= 'a' && c <= 'z')
+// 		c -= 32;                    
 // 	return (c);
 // }
-// int	main(void)
+// int	main()
 // {
-// 	char	*s;
-// 	char	*new;
-// 	s = "hello";
-// 	new = ft_strmapi(s, test);
-// 	if (!new)
-// 	{
-// 		printf("Allocation failed !");
-// 		return (1);
-// 	}
-// 	printf("str : %s\n", s);
-// 	printf("new str : %s\n", new);
-// 	free (new);	
+// 	char	*newstr;
+// 	newstr = ft_strmapi("hello", uppcaseifeven);
+// 	if (!newstr)
+// 		printf("NULL\n");
+// 	else 
+// 		printf("%s\n", newstr);
+// 	free(newstr);
+// 	return (0);
 // }

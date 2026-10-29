@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:33:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/21 16:50:30 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/29 16:32:55 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
-	if (n == 0)
+	if (nb == 0)
 	{
 		str[0] = '0';
 		return (str);
@@ -66,27 +66,16 @@ char	*ft_itoa(int n)
 }
 
 // #include <stdio.h>
-// #include <limits.h>
-// int	main(void)
+// int	main()
 // {
-// 	char	*str;
-// 	str = ft_itoa(0);
-// 	printf("0: %s\n", str);
-// 	free(str);
-// 	str = ft_itoa(42);
-// 	printf("42: %s\n", str);
-// 	free(str);
-// 	str = ft_itoa(-42);
-// 	printf("-42: %s\n", str);
-// 	free(str);
-// 	str = ft_itoa(2147483647);
-// 	printf("INT_MAX: %s\n", str);
-// 	free(str);
-// 	str = ft_itoa(-2147483648);
-// 	printf("INT_MIN: %s\n", str);
-// 	free(str);
-// 	str = ft_itoa(100000);
-// 	printf("100000: %s\n", str);
-// 	free(str);
-// 	return (0);
+// 	size_t	i = 0;
+// 	char	*itoa = ft_itoa(-234);
+// 	while (ft_strlen(itoa) > i)
+// 	{
+// 		printf("[%c]", itoa[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]", itoa[i]);
+// 	free (itoa);
+// 	printf("\n");
 // }

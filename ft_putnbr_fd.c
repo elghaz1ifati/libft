@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 10:42:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 11:17:08 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/29 19:28:48 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ void	ft_putnbr_fd(int n, int fd)
 }
 
 // if (n == -2147483648)
-	// {
-	// 	ft_putstr_fd("-21", fd);
-	// 	ft_putnbr_fd(47483648, fd);
-	// 	return ;
-	// }
+// 	{
+// 		ft_putstr_fd("-21", fd);
+// 		ft_putnbr_fd(47483648, fd);
+// 		return ;
+// 	}
 // int	main()
 // {
 // 	ft_putnbr_fd(-143,1);

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 16:07:13 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/27 20:33:04 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/29 20:00:11 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,13 @@ int	ft_memcmp(const void *str1, const void *str2, size_t byte)
 	}
 	return (0);
 }
-
+// #include <string.h>
 // #include <stdio.h>
 // int main()
 // {
 // 	char	*s1 = "HELLO\0 WORLD";
 // 	char	*s2 = "HELLO \0WORLD";
-// 	int	memcmp = ft_memcmp(s1, s2, 12);
-// 	printf("%d\n", memcmp);
+// 	int	meemcmp = ft_memcmp(s1, s2, 12);
+// 	printf(" mine = %d\n", meemcmp);
+// 	printf("%d",memcmp(s1,s2,12));
 // }

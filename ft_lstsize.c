@@ -6,7 +6,7 @@
 /*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:15:50 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/31 00:53:50 by fati             ###   ########.fr       */
+/*   Updated: 2026/10/31 00:59:00 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int	ft_lstsize(t_list *lst)
 // 	node2->next = node3;
 // 	lst = node1;
 // 	printf("Size: %d\n", ft_lstsize(lst));
-// 	printf("Empty list size: %d\n", ft_lstsize(NULL));
 // 	free(node1);
 // 	free(node2);
 // 	free(node3);

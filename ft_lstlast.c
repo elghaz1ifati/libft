@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:28:58 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 15:39:50 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/31 00:59:20 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,20 +24,19 @@ t_list	*ft_lstlast(t_list *lst)
 // #include <stdio.h>
 // int	main(void)
 // {
-// 	t_list	*a;
-// 	t_list	*b;
-// 	t_list	*c;
+// 	t_list	*node1;
+// 	t_list	*node2;
+// 	t_list	*node3;
 // 	t_list	*last;
-// 	a = ft_lstnew("a");
-// 	b = ft_lstnew("b");
-// 	c = ft_lstnew("c");
-// 	a->next = b;
-// 	b->next = c;
-// 	last = ft_lstlast(a);
+// 	node1 = ft_lstnew("ana lwel");
+// 	node2 = ft_lstnew("ana tani");
+// 	node3 = ft_lstnew("ana akhir wahed");
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	last = ft_lstlast(node1);
 // 	if (last)
 // 		printf("Last node: %s\n", (char *)last->content);
-// 	printf("Empty list: %p\n", (void *)ft_lstlast(NULL));
-// 	free(a);
-// 	free(b);
-// 	free(c);
+// 	free(node1);
+// 	free(node2);
+// 	free(node3);
 // }

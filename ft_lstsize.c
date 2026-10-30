@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:15:50 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 15:26:26 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/31 00:53:50 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,22 @@ int	ft_lstsize(t_list *lst)
 }
 
 // #include <stdio.h>
-// int	main(void)
+// int	main()
 // {
-// 	t_list	*a;
-// 	t_list	*b;
-// 	t_list	*c;
+// 	t_list	*node1;
+// 	t_list	*node2;
+// 	t_list	*node3;
 // 	t_list	*lst;
-// 	a = ft_lstnew("a");
-// 	b = ft_lstnew("b");
-// 	c = ft_lstnew("c");
-// 	a->next = b;
-// 	b->next = c;
-// 	lst = a;
+// 	node1 = ft_lstnew("Hello");
+// 	node2 = ft_lstnew("BOnjour");
+// 	node3 = ft_lstnew("Holla");
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	lst = node1;
 // 	printf("Size: %d\n", ft_lstsize(lst));
 // 	printf("Empty list size: %d\n", ft_lstsize(NULL));
-// 	free(a);
-// 	free(b);
-// 	free(c);
+// 	free(node1);
+// 	free(node2);
+// 	free(node3);
 // 	return (0);
 // }

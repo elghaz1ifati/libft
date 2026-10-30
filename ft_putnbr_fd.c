@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 10:42:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/29 19:28:48 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/30 23:37:52 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_putnbr_fd(int n, int fd)
 {
 	long	nb;
+	long	div;
 
 	nb = n;
 	if (nb < 0)
@@ -22,19 +23,19 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd('-', fd);
 		nb = -nb;
 	}
-	if (nb >= 10)
-		ft_putnbr_fd(nb / 10, fd);
-	ft_putchar_fd((nb % 10) + '0', fd);
+	div = 1;
+	while ((nb / div) >= 10)
+		div = div * 10;
+	while (div > 0)
+	{
+		ft_putchar_fd((nb / div) + '0', fd);
+		nb = nb % div;
+		div = div / 10;
+	}
 }
 
-// if (n == -2147483648)
-// 	{
-// 		ft_putstr_fd("-21", fd);
-// 		ft_putnbr_fd(47483648, fd);
-// 		return ;
-// 	}
 // int	main()
 // {
-// 	ft_putnbr_fd(-143,1);
+// 	ft_putnbr_fd(-42,1);
 // 	ft_putchar_fd('\n', 1);
 // }

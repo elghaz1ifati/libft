@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:48:35 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 12:58:58 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/30 23:10:34 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list *ft_lstnew(void *content)
 {
-	t_list	*new_node;
+	t_list *new_node;
 
 	new_node = malloc(sizeof(t_list));
 	if (!new_node)
@@ -25,15 +25,15 @@ t_list	*ft_lstnew(void *content)
 }
 
 // #include <stdio.h>
-// int	main(void)
+// int main(void)
 // {
-// 	char	*str;
-// 	t_list	*node;
+// 	char *str;
+// 	t_list *node;
 
 // 	str = "hello";
 // 	node = ft_lstnew(str);
 // 	if (!node)
-// 		return (1);
+// 		printf("NULL");
 // 	printf("Content: %s\n", (char *)node->content);
 // 	printf("Next: %p\n", (void *)node->next);
 // 	free(node);

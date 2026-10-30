@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:25:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/27 21:31:35 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/30 23:45:38 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	*ft_calloc(size_t num, size_t size)
 	ft_bzero(ptr, num * size);
 	return (ptr);
 }
+
 // #include <stdio.h>
 // int main()
 // {

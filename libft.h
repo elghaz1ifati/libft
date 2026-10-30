@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:19:18 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/28 12:48:24 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/30 23:47:52 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-//Part 1 libc functions
+//Part 1 Libc functions
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -54,6 +54,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
 
+//Part 3 linked list functions
 typedef struct s_list
 {
 	void			*content;

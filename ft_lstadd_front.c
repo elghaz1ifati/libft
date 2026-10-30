@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:37:38 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 14:14:25 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/31 00:45:38 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,21 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // #include <stdio.h>
 // int	main(void)
 // {
-// 	t_list	*a;
-// 	t_list	*b;
+// 	t_list	*node1;
+// 	t_list	*node2;
 // 	t_list	*lst;
-// 	a = ft_lstnew("hello");
-// 	b = ft_lstnew("world");
-// 	lst = a;
-// 	ft_lstadd_front(&lst, b);
+// 	node1 = ft_lstnew("hello");
+// 	node2 = ft_lstnew("world");
+// 	lst = node1;
+// 	ft_lstadd_front(&lst, node2);
+// 	int i = 1;
 // 	while (lst)
 // 	{
-// 		printf("%s\n", (char *)lst->content);
+// 		printf("node [%d] -> content [%s]\n", i,(char *)lst->content);
 // 		lst = lst->next;
+// 		i++;
 // 	}
-// 	free(a);
-// 	free(b);
+// 	free(node1);
+// 	free(node2);
 // }
-// [b | next] → [a | next] → NULL
-//     node 1      node 2
+// [node2 | next] → [node1 | next] → NULL

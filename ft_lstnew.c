@@ -6,7 +6,7 @@
 /*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:48:35 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/31 01:14:32 by fati             ###   ########.fr       */
+/*   Updated: 2026/10/31 01:27:06 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,10 @@ t_list	*ft_lstnew(void *content)
 // 	str = "hello";
 // 	node = ft_lstnew(str);
 // 	if (!node)
-// 		printf("NULL");
+//	{
+//		printf("NULL");
+//		return (1);
+//	}
 // 	printf("Content: %s\n", (char *)node->content);
 // 	printf("Next: %p\n", (void *)node->next);
 // 	free(node);

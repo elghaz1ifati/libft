@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:45:33 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/22 15:59:38 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/10/31 01:13:53 by fati             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,32 +30,32 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // #include <stdio.h>
 // int main()
 // {
-// 	t_list	*a;
-// 	t_list	*b;
-// 	t_list	*c;
+// 	t_list	*node1;
+// 	t_list	*node2;
+// 	t_list	*node3;
 // 	t_list	*lst;
 // 	t_list	*empty;
-// 	t_list	*current;
-// 	t_list	*x;
-// 	a = ft_lstnew("a");
-// 	b = ft_lstnew("b");
-// 	c = ft_lstnew("c");
-// 	a->next = b;
-// 	b->next = NULL;
-// 	lst = a;
-// 	ft_lstadd_back(&lst, c);
-// 	current = lst;
-// 	while (current)
+// 	t_list	*only;
+// 	node1 = ft_lstnew("ana awal wahed");
+// 	node2 = ft_lstnew("ana tani");
+// 	node3 = ft_lstnew("ana talet");
+// 	node1->next = node2;
+// 	node2->next = NULL;
+// 	lst = node1;
+// 	ft_lstadd_back(&lst, node3);
+// 	int i = 1;
+// 	while (lst)
 // 	{
-// 		printf("%s\n", (char *)current->content);
-// 		current = current->next;
+// 		printf("node [%d]->[%s]\n",i, (char *)lst->content);
+// 		lst = lst->next;
+// 		i++;
 // 	}
 // 	empty = NULL;
-// 	x = ft_lstnew("x");
-// 	ft_lstadd_back(&empty, x);
-// 	printf("Empty list test: %s\n", (char *)empty->content);
-// 	free(a);
-// 	free(b);
-// 	free(c);
-// 	free(x);
+// 	only = ft_lstnew("I m the only one");
+// 	ft_lstadd_back(&empty, only);
+// 	printf("Empty list test : %s\n", (char *)empty->content);
+// 	free(node1);
+// 	free(node2);
+// 	free(node3);
+// 	free(only);
 // }

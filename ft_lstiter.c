@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:31:22 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 18:49:08 by fati             ###   ########.fr       */
+/*   Updated: 2026/11/02 20:48:06 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // 	printf("Before: %s %s\n", (char *)node1->content, (char *)node2->content);
 // 	ft_lstiter(node1, convertupper);
 // 	printf("Before: %s %s\n", (char *)node1->content, (char *)node2->content);
-// 	ft_lstclear(&node1, free);	
+// 	ft_lstclear(&node1, free);
 // }

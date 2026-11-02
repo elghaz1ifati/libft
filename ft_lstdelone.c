@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fati <fati@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 16:02:06 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/31 01:35:50 by fati             ###   ########.fr       */
+/*   Updated: 2026/11/02 20:48:39 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst)
 		return ;
@@ -32,7 +32,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 // 	node = ft_lstnew(ft_strdup("hello"));
 // 	if (!node)
 // 	{
-// 		printf("NULL A FATI\n");
+// 		printf("NULL A fatel-gh\n");
 // 		return (1);
 // 	}
 // 	printf("Before deletion: %s\n", (char *)node->content);

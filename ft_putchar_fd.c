@@ -6,11 +6,9 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 10:11:03 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/29 19:23:50 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:37:24 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 18:38:06 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/10/28 12:31:40 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:34:12 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	join = malloc ((s1_len + s2_len) + 1);
+	join = malloc((s1_len + s2_len) + 1);
 	if (!join)
 		return (NULL);
 	ft_memcpy(join, s1, s1_len);
@@ -33,7 +33,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 // #include <stdio.h>
 // int	main(void)
 // {
-// 	char	*str[3] = {"hello ", "fati"};
+// 	char	*str[3] = {"hello ", "fatel-gh"};
 // 	char	*join;
 // 	int	i;
 // 	i = 0;

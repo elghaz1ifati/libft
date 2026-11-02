@@ -135,7 +135,7 @@ Make sure the following tools are available:
 ### ⬇️ Clone the Repository
 
 ```bash
-git clone https://github.com/elghaz1ifati/libft.git
+git clone https://github.com/elghaz1ifatel-gh/libft.git
 cd libft
 ```
 

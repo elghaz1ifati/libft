@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:43:20 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:07:38 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:55:00 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
+  
 // #include <stdio.h>
 // int	main()
 // {

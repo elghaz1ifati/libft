@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 19:05:55 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:34:40 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:30:39 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,17 +47,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trimmed[end - start] = '\0';
 	return (trimmed);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*trim = ft_strtrim(".  hello  .  .", ".");
-// 	size_t i = 0;
-// 	while (i < ft_strlen(trim))
-// 	{
-// 		printf("[%ld]-[%c]", i, trim[i]);
-// 		i++;
-// 	}
-// 	printf("[%ld]-[\\%d]", i, trim[i]);
-// 	printf("\n");
-// }

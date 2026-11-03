@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:33:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:35:49 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:33:29 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,18 +64,3 @@ char	*ft_itoa(int n)
 	fill_digits(str, nb, len);
 	return (str);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	size_t	i = 0;
-// 	char	*itoa = ft_itoa(-234);
-// 	while (ft_strlen(itoa) > i)
-// 	{
-// 		printf("[%c]", itoa[i]);
-// 		i++;
-// 	}
-// 	printf("[\\%d]", itoa[i]);
-// 	free (itoa);
-// 	printf("\n");
-// }

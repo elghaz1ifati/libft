@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:45:14 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:33:26 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:30:18 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,26 +31,3 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	sub[len] = '\0';
 	return (sub);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	const char *s = "";
-// 	unsigned int start = 3;
-// 	size_t len = 5;
-// 	char *sub = ft_substr(s, start, len);
-// 	size_t i = 0;
-// 	if (!s)
-// 		printf("NULL AKHTI");
-// 	else 
-// 	{
-// 		while (ft_strlen(sub) > i)
-// 		{
-// 			printf("[%c]", sub[i]);
-// 			i++;
-// 		}
-// 		printf("[\\%d]",sub[i]);
-// 	}
-// 	printf("\n");
-// 	free (sub);
-// }

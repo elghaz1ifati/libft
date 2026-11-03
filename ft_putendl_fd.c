@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 10:35:50 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:38:49 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:32:13 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	ft_putendl_fd("hello fati", 1);
-// }

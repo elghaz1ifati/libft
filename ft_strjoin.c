@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 18:38:06 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:34:12 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:27:01 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
-	int		s1_len;
-	int		s2_len;
-	char	*join;
+	size_t		s1_len;
+	size_t		s2_len;
+	char		*join;
 
 	if (!s1 || !s2)
 		return (NULL);
@@ -29,24 +29,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	ft_memcpy(join + s1_len, s2, s2_len + 1);
 	return (join);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	char	*str[3] = {"hello ", "fatel-gh"};
-// 	char	*join;
-// 	int	i;
-// 	i = 0;
-// 	while (i < 3)
-// 	{
-// 		printf("[%d] %s\n", i, str[i]);
-// 		i++;
-// 	}
-// 	join = ft_strjoin(str[0], str[1]);
-// 	if (!join)
-// 		printf("NULL A BENTY");
-// 	else
-// 		printf("joined: %s\\%d\n", join, join[11]);
-// 	free(join);
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 09:44:10 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:36:46 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:31:34 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// #include <stdio.h>
-// void	uppodd(unsigned int i, char *c)
-// {
-// 	if (i % 2 != 0 && *c >= 'a' && *c <= 'z')
-// 		*c = *c - 32;
-// }
-// int	main()
-// {
-// 	char	s[] = "hello fati";
-// 	printf("%p -> ", s);
-// 	printf("Before : %s\n", s);
-// 	ft_striteri(s, uppodd);
-// 	printf("%p -> ", s);
-// 	printf("After : %s\n", s);
-// }

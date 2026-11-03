@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 15:48:37 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:35:06 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:30:58 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,29 +76,3 @@ char	**ft_split(const char *str, char sep)
 		return (NULL);
 	return (fill_word(str, sep, arr, count));
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	**arr;
-// 	int	a;
-// 	int	i;
-// 	arr = ft_split("   hello world cv bien   ", ' ');
-// 	a = 0;
-// 	while (arr && arr[a])
-// 	{
-// 		printf("[%d]->",a);
-// 		i = 0;
-// 		while (arr[a][i])
-// 		{
-// 			printf("[%c]", arr[a][i]);
-// 			i++;
-// 		}
-// 		printf("[\\%d]",arr[a][i]);
-// 		printf("\n");
-// 		free(arr[a]);
-// 		a++;
-// 	}
-// 	free(arr);
-// 	return (0);
-// }

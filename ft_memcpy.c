@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 10:11:46 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 21:07:56 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:46:15 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,26 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t byte)
 	}
 	return (dest);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	const char	*s = "a\0cde";
-// 	char	d[6] = "ABC\0E";
-// 	int	i;
-// 	i = 0;
-// 	while(i < 5)
-// 	{
-// 		printf("[%c]", s[i]);
-// 		i++;
-// 	}
-// 	printf("\n");
-// 	ft_memcpy(d, s, 3);
-// 	i = 0;
-// 	while(i < 5)
-// 	{
-// 		printf("[%c]", d[i]);
-// 		i++;
-// 	}
-// 	printf("\n");
-// }

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:59:51 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:55:17 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:47:08 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	dest[i] = '\0';
 	return (s_len);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char *src = "hello";
-// 	char dest[20];
-// 	ft_strlcpy(dest, src, 20);
-// 	printf("%ld\n",	ft_strlcpy(dest, src, 20));
-// 	printf("[%p] %s\n",&src, src);
-// 	printf("[%p] %s\n",&dest, dest);
-// }

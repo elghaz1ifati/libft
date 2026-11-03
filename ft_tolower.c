@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:13:34 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:55:45 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:50:49 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	printf("\n===== ft_tolower =====\n");
-// 	printf("test ['A']: expected ['a'] got ['%c']\n", ft_tolower('A'));
-// 	printf("test ['Z']: expected ['z'] got ['%c']\n", ft_tolower('Z'));
-// 	printf("test ['m']: expected ['m'] got ['%c']\n", ft_tolower('m'));
-// 	printf("test ['5']: expected ['5'] got ['%c']\n", ft_tolower('5'));
-// 	printf("test [' ']: expected [' '] got ['%c']\n", ft_tolower(' '));
-// 	return (0);
-// }

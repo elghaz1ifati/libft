@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:25:42 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:44:29 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:45:45 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,21 +24,3 @@ void	*ft_calloc(size_t num, size_t size)
 	ft_bzero(ptr, num * size);
 	return (ptr);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int	i = 0;
-// 	int	*ptr = ft_calloc(5, sizeof(int));
-// 	if (!ptr)
-// 	{
-// 		printf("Allocation failed\n");
-// 		return (0);
-// 	}
-// 	while (i < 5)
-// 	{
-// 		printf ("index [%d] Address [%p] Value [%d]\n", i, &ptr[i], ptr[i]);
-// 		i++;
-// 	}
-// 	free(ptr);
-// }

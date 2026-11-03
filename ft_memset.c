@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 14:21:34 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:47:07 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:01:40 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,32 +26,3 @@ void	*ft_memset(void *ptr, int value, size_t byte)
 	}
 	return (ptr);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	int b;
-// 	int i;
-// 	char	str[6] = "hello";
-// 	ft_memset(str, 'F', 3);
-// 	i = 0;
-// 	while (str[i])
-// 	{
-// 		printf("[%c]",str[i]);
-// 		i++;
-// 	}
-// 	printf("[%c]\n", str[i]);
-// 	b = 0;
-// 	//1337
-// 	ft_memset(&b, 0x5, 2);
-// 	ft_memset(&b, 0x39, 1);
-// 	printf("[%d]\n", b);
-// 	b = 0;
-// 	//-1337
-// 	ft_memset(&b, 0xFF, 4);
-// 	ft_memset(&b, 0xFA, 1);
-// 	ft_memset((unsigned char *)&b + 1, 0xFA, 1);
-// 	ft_memset((unsigned char *)&b + 2, 0xFF, 2);
-// 	ft_memset(&b, 0xC7, 1);
-// 	printf("[%d]\n", b);
-// }

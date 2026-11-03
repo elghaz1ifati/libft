@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 12:52:43 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:55:21 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 11:58:18 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,3 @@ size_t	ft_strlen(const char *str)
 		index++;
 	return (index);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	printf("\n===== ft_strlen =====\n");
-// 	printf("test [hello]: expected [5] got [%zu]\n", ft_strlen("hello"));
-// 	printf("test [empty]: expected [0] got [%zu]\n", ft_strlen(""));
-// 	printf("test [42]: expected [2] got [%zu]\n", ft_strlen("42"));
-// 	printf("test [spaces]: expected [3] got [%zu]\n", ft_strlen("   "));
-// 	return (0);
-// }

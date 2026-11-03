@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:47:00 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:55:28 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:47:21 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t byte)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*s1 = "HI BABY";
-// 	char	*s2 = "HI BaBY";
-// 	if (s1 == NULL || s2 == NULL)
-// 		printf("NULL pointer detected\n");
-// 	else
-// 	{
-// 		int	cmp = ft_strncmp(s1, s2, ft_strlen(s2));
-// 		printf("%d\n", cmp);
-// 	}
-// }

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:19:53 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:55:13 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 12:47:01 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	dest[d_len + i] = '\0';
 	return (d_len + s_len);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*src = "fatel-gh!";
-// 	char	dest[20] = "HELLO ";
-// 	printf("[%p] %s\n", &dest, dest);
-// 	size_t	size = ft_strlcat(dest, src, 20);
-// 	printf("[%p] %s\n", &src, src);
-// 	printf("[%p] %s\n", &dest, dest);
-// 	printf("%zu\n", size);
-// }

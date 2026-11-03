@@ -2,7 +2,7 @@
 
 # 📚 Libft
 
-## 📖 1. Overview
+## 📖 1. Description
 
 **Libft** is a C programming project from the 42 curriculum. The objective is to create a personal C library by reimplementing selected functions from the standard C library and developing additional utility functions.
 
@@ -221,8 +221,8 @@ The following references provide information about C programming, standard libra
 - 🛠️ [GNU Make manual](https://www.gnu.org/software/make/manual/) — Documentation for Makefiles and build automation.
 - 📦 [GNU Binutils documentation](https://sourceware.org/binutils/docs/) — Documentation for tools used to manage object files and static libraries.
 - 🧪 [Valgrind](https://valgrind.org/) — A memory debugging tool used to detect memory leaks and invalid memory accesses.
-- 🧩 [Python Tutor — C Visualizer](https://pythontutor.com/c.html) — Visualizes C code execution step by step, helping explain pointers, variables, memory, and data structures. <Cite refs={["turn134993search0","turn134993search8"]}/>
-- 📝 [GitHub README documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) — Explains the purpose of README files and how they help people understand and use a repository. <Cite refs={["turn134993search6"]}/>
+- 🧩 [Python Tutor — C Visualizer](https://pythontutor.com/c.html) — Visualizes C code execution step by step, helping explain pointers, variables, memory, and data structures.
+- 📝 [GitHub README documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes) — Explains the purpose of README files and how they help people understand and use a repository.
 - ✍️ [GitHub Markdown guide](https://docs.github.com/en/get-started/writing-on-github) — A guide to Markdown formatting, headings, lists, links, and code blocks used to create readable README files.
 - 💬 [Stack Overflow](https://stackoverflow.com/) — Community questions and answers about C programming, debugging, and compilation.
 - 📄 **42 Libft project subject** — The official project specification provided by 42.

@@ -6,13 +6,13 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:15:50 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:53:57 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:37:26 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+unsigned int	ft_lstsize(t_list *lst)
 {
 	int	count;
 

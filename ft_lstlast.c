@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 15:28:58 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:50:27 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:50:18 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,23 +20,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	t_list	*node1;
-// 	t_list	*node2;
-// 	t_list	*node3;
-// 	t_list	*last;
-// 	node1 = ft_lstnew("ana lwel");
-// 	node2 = ft_lstnew("ana tani");
-// 	node3 = ft_lstnew("ana akhir wahed");
-// 	node1->next = node2;
-// 	node2->next = node3;
-// 	last = ft_lstlast(node1);
-// 	if (last)
-// 		printf("Last node: %s\n", (char *)last->content);
-// 	free(node1);
-// 	free(node2);
-// 	free(node3);
-// }

@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:48:35 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/02 20:43:33 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/03 14:49:59 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char *str;
-// 	t_list *node;
-
-// 	str = "hello";
-// 	node = ft_lstnew(str);
-// 	if (!node)
-//	{
-//		printf("NULL");
-//		return (1);
-//	}
-// 	printf("Content: %s\n", (char *)node->content);
-// 	printf("Next: %p\n", (void *)node->next);
-// 	free(node);
-// 	return (0);
-// }

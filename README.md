@@ -240,5 +240,3 @@ The resulting `libft.a` serves as a personal collection of C utility functions t
 ## 👤 Author
 
 **42 Login:** fatel-gh
-
-**GitHub:** [elghaz1ifati](https://github.com/elghaz1ifati)

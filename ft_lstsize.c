@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 14:15:50 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/03 14:37:26 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:19:56 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,23 +24,3 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	t_list	*node1;
-// 	t_list	*node2;
-// 	t_list	*node3;
-// 	t_list	*lst;
-// 	node1 = ft_lstnew("Hello");
-// 	node2 = ft_lstnew("BOnjour");
-// 	node3 = ft_lstnew("Holla");
-// 	node1->next = node2;
-// 	node2->next = node3;
-// 	lst = node1;
-// 	printf("Size: %d\n", ft_lstsize(lst));
-// 	free(node1);
-// 	free(node2);
-// 	free(node3);
-// 	return (0);
-// }

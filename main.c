@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/05 19:44:46 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/05 22:13:46 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,10 @@
 // {
 // 	printf("======== ft_strlen ========\n");
 // 	printf("%zu\n",ft_strlen(""));
-// 	printf("%zu\n",strlen(""));
+// 	char a[5] = "Hello";           // {'H','e','l','l','o','\0'}
+// 	char b[5] = {'H','e','l','l','o'}; // no '\0' here
+// 	printf("%zu\n", strlen(a));  // 5
+// 	printf("%zu\n", strlen(b));  // undefined behaviour
 // }
 // void	test_memset()
 // {
@@ -81,6 +84,36 @@
 // 	ft_memset((char*)&n + 1, 0xFA, 1);
 // 	printf("%d\n", n);
 // }
+// void	test_bzero()
+// {
+// 	printf("======== ft_bzero ========\n");
+// 	char	str[7] = "fatima";
+// 	ft_bzero(str+3, 2);
+// 	printf("%s\n", str);
+// }
+// void	test_memcpy()
+// {
+// 	char	dest[5] = "hello";
+// 	char	*src = "fati";
+// 	printf("======== ft_memcpy ========\n");
+// 	char	*res = ft_memcpy(dest, src, 2);
+// 	int	i = 0;
+// 	while (res[i])
+// 	{
+// 		printf("[%c]", res[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", res[i]);
+// 	printf("======== memcpy ========\n");
+// 	char	*resm = memcpy(dest, src, 2);
+// 	i = 0;
+// 	while (resm[i])
+// 	{
+// 		printf("[%c]", resm[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", resm[i]);
+// }
 
 int	main()
 {
@@ -98,5 +131,6 @@ int	main()
 	// test_isprint();
 	// test_strlen();
 	// test_memset();
-	
+	// test_bzero();
+	// test_memcpy();
 }

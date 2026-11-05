@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/05 22:13:46 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/05 23:01:50 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@
 
 int	main()
 {
-	printf("======== Part 1 libc functions ========\n");
+	// printf("======== Part 1 libc functions ========\n");
 	// test_EOF
 	// int	eof;
 	// while ((eof =  getchar())!= EOF)

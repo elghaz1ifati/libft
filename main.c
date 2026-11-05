@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/04 21:30:31 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/05 17:55:29 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,6 @@ int	main()
 	// test_isascii();
 	// test_isprint();
 	// test_strlen();
+	test_memset();
 	
 }

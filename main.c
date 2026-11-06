@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/06 21:03:59 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/06 21:11:40 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -241,6 +241,18 @@
 // 	printf("======== atoi ========\n");
 // 	printf("%d\n", atoi("-42"));
 // }
+// void	test_strdup()
+// {
+// 	printf("======== ft_strdup ========\n");
+// 	char	*str = "hello fati";
+// 	char	*p1 = ft_strdup(str);
+// 	char	*p2 = strdup(str);
+// 	printf("[%p] %s\n", &str, str);
+// 	printf("[%p] %s\n", &p1, p1);
+// 	printf("======== strdup ========\n");
+// 	printf("[%p] %s\n", &str, str);
+// 	printf("[%p] %s\n", &p2, p2);
+// }
 
 
 int	main()
@@ -295,4 +307,7 @@ int	main()
 	// printf("\n");
 	// test_atoi();
 	// printf("\n");
+	// test_calloc();
+	// printf("\n");
+	// test_strdup();
 }

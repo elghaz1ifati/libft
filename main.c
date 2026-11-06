@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/05 23:01:50 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/06 18:23:39 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,31 +93,105 @@
 // }
 // void	test_memcpy()
 // {
-// 	char	dest[5] = "hello";
-// 	char	*src = "fati";
+// 	char	dest[] = "hello";
+// 	char	src[] = "fati";
 // 	printf("======== ft_memcpy ========\n");
-// 	char	*res = ft_memcpy(dest, src, 2);
+// 	ft_memcpy(dest, src, 2);
 // 	int	i = 0;
-// 	while (res[i])
+// 	while (dest[i])
 // 	{
-// 		printf("[%c]", res[i]);
+// 		printf("[%c]", dest[i]);
 // 		i++;
 // 	}
-// 	printf("[\\%d]\n", res[i]);
+// 	printf("[\\%d]\n", dest[i]);
 // 	printf("======== memcpy ========\n");
-// 	char	*resm = memcpy(dest, src, 2);
+// 	memcpy(dest, src, 2);
 // 	i = 0;
-// 	while (resm[i])
+// 	while (dest[i])
 // 	{
-// 		printf("[%c]", resm[i]);
+// 		printf("[%c]", dest[i]);
 // 		i++;
 // 	}
-// 	printf("[\\%d]\n", resm[i]);
+// 	printf("[\\%d]\n", dest[i]);
 // }
+// void	test_memmove()
+// {
+// 	char	s1[] = "fati"; // dest = ati
+// 	printf("======== ft_memmove========\n");
+// 	char *d1 = ft_memmove(s1 + 1, s1, 2); // s1 + 1  = ati
+// 	int	i = 0;
+// 	while (d1[i])
+// 	{
+// 		printf("[%c]", d1[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", d1[i]);
+	
+// 	printf("======== memmove ========\n");
+// 	char	s2[] = "fati"; // s2 + 1 = ati
+// 	char	*d2 = memmove(s2 + 1, s2, 2);
+// 	i = 0;
+// 	while (d2[i])
+// 	{
+// 		printf("[%c]", d2[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", d2[i]);
+// }
+// void	test_strlcpy()
+// {
+// 	printf("======== ft_strlcpy ========\n");
+// 	char	*src = "FATI";
+// 	char	dest[4];
+// 	int	i = 0;
+// 	ft_strlcpy(dest, src, 4);
+// 	while (dest[i])
+// 	{
+// 		printf("[%c]", dest[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", dest[i]);
+// 	printf("%zu\n",ft_strlcpy(dest, src, 4));
+// }
+// void	test_strlcat()
+// {
+//  	printf("======== ft_strlcat ========\n");
+// 	char	*src = "MAZ";
+// 	char	dest[9] = "FATI ";
+// 	int	i = 0;
+// 	int	size = ft_strlcat(dest, src, 9);
+// 	while (dest[i])
+// 	{
+// 		printf("[%c]", dest[i]);
+// 		i++;
+// 	}
+// 	printf("[\\%d]\n", dest[i]);
+// 	printf("%d\n", size);
+// }
+// void	test_toupper()
+// {
+// 	printf("======== ft_toupper ========\n");
+// 	printf("%c\n",ft_toupper('r'));
+// 	printf("%c\n",toupper('r'));
+// }
+// void	test_tolower()
+// {
+// 	printf("======== ft_tolower ========\n");
+// 	printf("%c\n",ft_tolower('R'));
+// 	printf("%c\n",tolower('R'));
+// }
+void	test_strchr()
+{
+	printf("======== ft_strchr ========\n");
+	char	*str = "hello fati";
+	int	c = 'f';
+	printf("%s\n", str);
+	printf("%c -> %s\n", c, ft_strchr(str, c));
+}
 
 int	main()
 {
-	// printf("======== Part 1 libc functions ========\n");
+	printf("======== Part 1 libc functions ========\n");
 	// test_EOF
 	// int	eof;
 	// while ((eof =  getchar())!= EOF)
@@ -133,4 +207,10 @@ int	main()
 	// test_memset();
 	// test_bzero();
 	// test_memcpy();
+	// test_memmove();
+	// test_strlcpy();
+	// test_strlcat();
+	// test_toupper();
+	// test_tolower();
+	test_strchr();
 }

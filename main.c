@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/06 21:14:10 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/06 21:23:17 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -243,7 +243,32 @@
 // }
 // void	test_calloc()
 // {
-	
+// 	int	i = 0;
+// 	int	*p1;
+// 	int	*p2;
+//     	p1 = ft_calloc(4, sizeof(int));
+// 	p2 = ft_calloc(4, sizeof(int));
+// 	printf("======== ft_calloc ========\n");
+//     	if (p1 == NULL)
+//         	printf("Error! memory not allocated.");
+// 	while (i < 4)
+// 	{
+// 		printf("[%d]", p1[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+// 	printf("======== calloc ========\n");
+// 	if (p2== NULL)
+//         	printf("Error! memory not allocated.");
+// 	i = 0;
+// 	while (i < 4)
+// 	{
+// 		printf("[%d]", p2[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+//     	free(p1);
+// 	free(p2);
 // }
 // void	test_strdup()
 // {
@@ -263,8 +288,8 @@
 
 int	main()
 {
-	printf("======== Part 1 libc functions ========\n");
-	printf("\n");
+	// printf("======== Part 1 libc functions ========\n");
+	// printf("\n");
 	// test_EOF
 	// int	eof;
 	// while ((eof =  getchar())!= EOF)

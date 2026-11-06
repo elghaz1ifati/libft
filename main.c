@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/06 18:23:39 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/06 20:11:03 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,8 @@
 // void	test_strlen()
 // {
 // 	printf("======== ft_strlen ========\n");
-// 	printf("%zu\n",ft_strlen(""));
-// 	char a[5] = "Hello";           // {'H','e','l','l','o','\0'}
-// 	char b[5] = {'H','e','l','l','o'}; // no '\0' here
-// 	printf("%zu\n", strlen(a));  // 5
-// 	printf("%zu\n", strlen(b));  // undefined behaviour
+// 	printf("%zu\n",ft_strlen("hello baby"));
+// 	printf("%zu\n",strlen("hello baby"));
 // }
 // void	test_memset()
 // {
@@ -180,18 +177,76 @@
 // 	printf("%c\n",ft_tolower('R'));
 // 	printf("%c\n",tolower('R'));
 // }
-void	test_strchr()
-{
-	printf("======== ft_strchr ========\n");
-	char	*str = "hello fati";
-	int	c = 'f';
-	printf("%s\n", str);
-	printf("%c -> %s\n", c, ft_strchr(str, c));
-}
+// void	test_strchr()
+// {
+// 	printf("======== ft_strchr ========\n");
+// 	char	*str = "hello fati";
+// 	int	c = 'f';
+// 	printf("%s\n", str);
+// 	printf("%c -> %s\n", c, ft_strchr(str, c));
+// }
+// void	test_strrchr()
+// {
+// 	printf("======== ft_strrchr ========\n");
+// 	char	*str = "hello ftati";
+// 	int	c = 't';
+// 	printf("%s\n", str);
+// 	printf("%c -> %s\n", c, ft_strrchr(str, c));
+// }
+// void	test_strncmp()
+// {
+// 	printf("======== ft_strncmp ========\n");
+// 	char	*s1 = "hello";
+// 	char	*s2 = "helko";
+// 	printf("%d\n", ft_strncmp(s1, s2, 2));
+// }
+// void	test_memchr()
+// {
+// 	printf("======== ft_memchr ========\n");
+// 	char	*str = "hello fati";
+// 	int	c = 'a';
+// 	char	*p1 = ft_memchr(str, c, 11);
+// 	char	*p2 =  memchr(str, c, 11);
+// 	if (!p1)
+// 		printf("NULL\n");
+// 	else
+// 		printf("%c\n", *p1);
+	
+// 	printf("======== memchr ========\n");
+// 	if (!p2)
+// 		printf("NULL\n");
+// 	else
+// 		printf("%c\n", *p2);
+// }
+// void	test_memcmp()
+// {
+// 	printf("======== ft_memcmp ========\n");
+// 	char	*s1 = "hello";
+// 	char	*s2 = "helko";
+// 	printf("%d\n", ft_memcmp(s1, s2, 6));
+// 	printf("======== memcmp ========\n");
+// 	printf("%d\n", memcmp(s1, s2, 6));
+// }
+// void	test_strnstr()
+// {
+// 	printf("======== ft_strnstr ========\n");
+// 	printf("%s\n", ft_strnstr("hello !","lo", 8));
+// 	printf("======== strstr ========\n");
+// 	printf("%s\n", strstr("hello !","lo"));	
+// }
+// void	test_atoi()
+// {
+// 	printf("======== ft_atoi ========\n");
+// 	printf("%d\n", ft_atoi("-42"));
+// 	printf("======== atoi ========\n");
+// 	printf("%d\n", atoi("-42"));
+// }
+
 
 int	main()
 {
 	printf("======== Part 1 libc functions ========\n");
+	printf("\n");
 	// test_EOF
 	// int	eof;
 	// while ((eof =  getchar())!= EOF)
@@ -199,18 +254,45 @@ int	main()
 	// printf("%d\n", eof);
 	
 	// test_isalpha();
+	// printf("\n");
 	// test_isdigit();
+	// printf("\n");
 	// test_isalnum();
+	// printf("\n");
 	// test_isascii();
+	// printf("\n");
 	// test_isprint();
+	// printf("\n");
 	// test_strlen();
+	// printf("\n");
 	// test_memset();
+	// printf("\n");
 	// test_bzero();
+	// printf("\n");
 	// test_memcpy();
+	// printf("\n");
 	// test_memmove();
+	// printf("\n");
 	// test_strlcpy();
+	// printf("\n");
 	// test_strlcat();
+	// printf("\n");
 	// test_toupper();
+	// printf("\n");
 	// test_tolower();
-	test_strchr();
+	// printf("\n");
+	// test_strchr();
+	// printf("\n");
+	// test_strrchr();
+	// printf("\n");
+	// test_strncmp();
+	// printf("\n");
+	// test_memchr();
+	// printf("\n");
+	// test_memcmp();
+	// printf("\n");
+	// test_strnstr();
+	// printf("\n");
+	// test_atoi();
+	// printf("\n");
 }

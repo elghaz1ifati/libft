@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/06 21:23:17 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/08 03:02:21 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -282,9 +282,53 @@
 // 	printf("[%p] %s\n", &str, str);
 // 	printf("[%p] %s\n", &p2, p2);
 // 	free(p1);
-// 	free(p2);
+// 	free(p2);  
 // }
-
+// void	test_substr()
+// {
+// 	printf("======== ft_substr ========\n");
+// 	char str[] = "hello fati";
+// 	char 	*sub = ft_substr(NULL, 6, 4);
+// 	if (!sub)
+// 	{
+// 		printf("NULL\n");
+// 		return ;
+// 	}
+// 	printf("[%p] %s\n", &str, str);
+// 	printf("[%p] %s\n", &sub, sub);
+// 	free(sub);
+// }
+// void	test_strjoin()
+// {
+// 	printf("======== ft_strjoin ========\n");
+// 	// char	*s1 = "hello ";
+// 	char	*s2 = "fati";
+// 	char	*join = ft_strjoin(NULL, s2);
+// 	if (!join)
+// 	{
+// 		printf("NULL\n");
+// 		return;
+// 	}
+// 	// printf("s1: %s\n", s1);
+// 	printf("s2: %s\n", s2);
+// 	printf("s1 + s2: %s\n", join);
+// 	free(join);
+// }
+// void	test_strtrim()
+// {
+//  	printf("======== ft_strtrim ========\n");
+// 	char	*str = ". hello .";
+// 	char	*set = ". ";
+// 	char	*trim = ft_strtrim(str, set);
+// 	if(!trim)
+// 	{
+// 		printf("%s", trim);
+// 		return ;
+// 	}
+// 	printf("%s\n", str);
+// 	printf("%s\n", trim);
+// 	free (trim);
+// }
 
 int	main()
 {
@@ -341,4 +385,10 @@ int	main()
 	// test_calloc();
 	// printf("\n");
 	// test_strdup();
+	// printf("\n");
+	printf("======== Part 2 additional functions ========\n");
+	// test_substr();
+	// printf("\n");
+	// test_strjoin();
+	// test_strtrim();
 }

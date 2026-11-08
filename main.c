@@ -6,7 +6,7 @@
 /*   By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:39:15 by fatel-gh          #+#    #+#             */
-/*   Updated: 2026/11/08 03:02:21 by fatel-gh         ###   ########.fr       */
+/*   Updated: 2026/11/08 05:39:27 by fatel-gh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@
 // 	printf("ft_memset: %s\n", str);
 // 	printf("======== memset ========\n");
 // 	printf("string: %s\n", str);
-// 	memset(str+9 ,'i', 1);     
+// 	memset(str+9 ,'i', 1);
 // 	printf("memset: %s\n", str);
 // 	printf("======== emojie F09F9982 ========\n");
 // 	char	emojie[5];
@@ -123,7 +123,7 @@
 // 		i++;
 // 	}
 // 	printf("[\\%d]\n", d1[i]);
-	
+
 // 	printf("======== memmove ========\n");
 // 	char	s2[] = "fati"; // s2 + 1 = ati
 // 	char	*d2 = memmove(s2 + 1, s2, 2);
@@ -211,7 +211,7 @@
 // 		printf("NULL\n");
 // 	else
 // 		printf("%c\n", *p1);
-	
+
 // 	printf("======== memchr ========\n");
 // 	if (!p2)
 // 		printf("NULL\n");
@@ -232,7 +232,7 @@
 // 	printf("======== ft_strnstr ========\n");
 // 	printf("%s\n", ft_strnstr("hello !","lo", 8));
 // 	printf("======== strstr ========\n");
-// 	printf("%s\n", strstr("hello !","lo"));	
+// 	printf("%s\n", strstr("hello !","lo"));
 // }
 // void	test_atoi()
 // {
@@ -282,7 +282,7 @@
 // 	printf("[%p] %s\n", &str, str);
 // 	printf("[%p] %s\n", &p2, p2);
 // 	free(p1);
-// 	free(p2);  
+// 	free(p2);
 // }
 // void	test_substr()
 // {
@@ -329,6 +329,35 @@
 // 	printf("%s\n", trim);
 // 	free (trim);
 // }
+// void test_itoa()
+// {
+// 	printf("======== ft_itoa ========\n");
+// 	char	*str1 = ft_itoa(490);
+// 	char	*str2 = ft_itoa(-2147483648);
+// 	char	*str3 = ft_itoa(-42);
+// 	printf("%s\n", str1);
+// 	printf("%s\n", str2);
+// 	printf("%s\n", str3);
+// 	free(str1);
+// 	free(str2);
+// 	free(str3);
+// }
+// char	evenupper(unsigned int i, char c)
+// {
+// 	if ((i % 2 == 0) && (c >= 'a' && c <= 'z'))
+// 		c = ft_toupper(c);
+// 	return (c);
+// }
+// void	test_strmapi()
+// {
+// 	printf("======== ft_strmapi ========\n");
+// 	char	*str = "hello fati";
+// 	char	*new;
+// 	new = ft_strmapi(str, evenupper);
+// 	printf("str = %s\n", str);
+// 	printf("new = %s\n", new);
+// 	free (new);
+// }
 
 int	main()
 {
@@ -339,7 +368,7 @@ int	main()
 	// while ((eof =  getchar())!= EOF)
 	// 	printf("%d\n", eof);
 	// printf("%d\n", eof);
-	
+
 	// test_isalpha();
 	// printf("\n");
 	// test_isdigit();
@@ -390,5 +419,9 @@ int	main()
 	// test_substr();
 	// printf("\n");
 	// test_strjoin();
+	// printf("\n");
 	// test_strtrim();
+	// printf("\n");
+	// test_itoa();
+	// test_strmapi();
 }

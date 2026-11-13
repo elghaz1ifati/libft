@@ -6,7 +6,7 @@
 #    By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 21:33:13 by fatel-gh          #+#    #+#              #
-#    Updated: 2026/11/13 21:36:34 by fatel-gh         ###   ########.fr        #
+#    Updated: 2026/11/13 22:01:45 by fatel-gh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ $(NAME): $(OBJECTS)
 	$(ARCHIVE) rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	$	(COMPILER) $(FLAGS) -c $< -o $@
+	$(COMPILER) $(FLAGS) -c $< -o $@
 
 clean:
 	$(REMOVE) $(OBJECTS)

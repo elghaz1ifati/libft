@@ -6,14 +6,16 @@
 #    By: fatel-gh <fatel-gh@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 21:33:13 by fatel-gh          #+#    #+#              #
-#    Updated: 2026/11/02 20:56:08 by fatel-gh         ###   ########.fr        #
+#    Updated: 2026/11/13 21:36:34 by fatel-gh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 COMPILER = cc
-CFLAGS = -Wall -Wextra -Werror
+FLAGS = -Wextra -Wall -Werror 
+ARCHIVE = ar
+REMOVE = rm -f
 SOURCES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_toupper.c ft_tolower.c ft_strlen.c ft_memset.c ft_bzero.c \
 	ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c ft_strchr.c \
@@ -25,9 +27,6 @@ SOURCES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
 	ft_lstmap.c
 
-ARCHIVE = ar
-REMOVE = rm -f
-
 OBJECTS = $(SOURCES:.c=.o)
 
 all: $(NAME)
@@ -35,7 +34,7 @@ $(NAME): $(OBJECTS)
 	$(ARCHIVE) rcs $(NAME) $(OBJECTS)
 
 %.o: %.c
-	$(COMPILER) $(CFLAGS) -c $< -o $@
+	$	(COMPILER) $(FLAGS) -c $< -o $@
 
 clean:
 	$(REMOVE) $(OBJECTS)
